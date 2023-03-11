@@ -119,3 +119,41 @@ body {
     transition: height 0.5s ease;
   }
 }
+
+@media (min-width:1024px) {
+  body {
+    background-size: 3.5rem 100%;
+  }
+
+  .container {
+    width: 70vw;
+  }
+
+  .title {
+    margin: 3rem 0 1rem;
+    font-size: 3rem;
+  }
+
+  .accordion {
+    padding: 1rem;
+  }
+
+  .accordion__label {
+    cursor: pointer;
+  }
+
+  .accordion__title {
+    font-size: 2rem;
+  }
+
+  .accordion__image-wrapper {
+    width: 45%;
+    height: 25rem;
+  }
+
+  .accordion input:checked~.accordion__label>.accordion__content {
+    height: 28rem;
+    transition: height 0.5s ease;
+  }
+
+}
