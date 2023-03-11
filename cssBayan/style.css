@@ -157,3 +157,30 @@ body {
   }
 
 }
+
+@media(hover:hover) {
+  .close {
+    opacity: 0;
+    transition: transform 0.9s ease, opacity 0.9s ease;
+  }
+
+  .accordion input:hover~.accordion__label>.accordion__content {
+    height: 28rem;
+    transition: height 0.5s ease;
+  }
+
+  .accordion:hover .close {
+    opacity: 1;
+    transition: transform 0.9s ease, opacity 0.9s ease;
+  }
+
+  .accordion:hover .accordion__title {
+    color: #000000;
+    transition: color 0.9s ease;
+  }
+
+  .accordion:hover .accordion__image-wrapper {
+    box-shadow: 0.1rem 0.1rem 1.1rem 0.3rem var(--accent-color);
+    transition: box-shadow 0.9s ease;
+  }
+}
