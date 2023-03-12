@@ -87,6 +87,16 @@ body {
   transition: color 0.9s ease;
 }
 
+.accordion input:active~.accordion__label>.accordion__title {
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+}
+
+.accordion input:active~.accordion__label>.accordion__content {
+  opacity: .5;
+  transition: opacity 0.5s ease;
+}
+
 .accordion input:checked~.accordion__label>.accordion__title>.close {
   transform: rotate(45deg);
   transition: transform 0.9s ease, opacity 0.9s ease;
